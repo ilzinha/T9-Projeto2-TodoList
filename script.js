@@ -17,24 +17,21 @@ window.addEventListener('DOMContentLoaded', () => {
        item.innerText = input.value
        lista.appendChild(item)
        
-        //cria o botão do item
+        //cria o botão do item para excluir
        const miniButton = document.createElement('button')
        miniButton.innerText = 'x'
        item.appendChild(miniButton)
 
        miniButton.addEventListener('click', () => {
            lista.removeChild(item)
-
-           
-           
-        })
+       })
         
+        //Marcar itens concluídos individualmente
         item.addEventListener('click', () => {
             item.style.textDecoration = 'line-through'
            })
     }
   
-       //Marcar itens concluídos individualmente
 
 
    }
