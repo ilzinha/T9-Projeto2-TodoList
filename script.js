@@ -67,7 +67,7 @@ window.addEventListener('DOMContentLoaded', () => {
             lista.addEventListener('dragstart', function (e) {
                 dragging = e.target.closest('.div_list')
             })
-
+             
 
             lista.addEventListener('dragover', function (e) {
                 e.preventDefault()
@@ -93,7 +93,7 @@ window.addEventListener('DOMContentLoaded', () => {
     buttonMarcarTodos.addEventListener('click', () => {
         let itens = document.querySelectorAll('li')
         for (i = 0; i < itens.length; i++) {
-            itens[i].style.textDecoration = 'line-through'
+            itens[i].classList.add('checked')
         }
     })
 
